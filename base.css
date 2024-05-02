@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap');
-
 
 body, h1, h2, h3, p, ul, li, nav, header, main, footer {
     margin: 0;
@@ -8,11 +6,10 @@ body, h1, h2, h3, p, ul, li, nav, header, main, footer {
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Times New Roman', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #404040;
     background-color: #f4f4f4;
 }
 
@@ -21,9 +18,8 @@ header, nav, main, footer {
     text-align: center;
 }
 
-
 header {
-    background-color: #005a87;
+    background-color: #006D77;
     color: #fff;
 }
 
@@ -31,10 +27,9 @@ header h1 {
     font-size: 2em;
 }
 
-
 nav ul {
     list-style-type: none;
-    background-color: #023e58;
+    background-color: #065A60;
 }
 
 nav ul li {
@@ -49,7 +44,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-
 main {
     background: white;
     padding: 20px;
@@ -57,27 +51,25 @@ main {
 }
 
 h2, h3 {
-    color: #005a87;
+    color: #006D77;
     font-family: 'Open Sans', sans-serif;
 }
 
 .card {
-    background-color: #e2e2e2;
+    background-color: #E8E8E8;
     margin: 20px 0;
     padding: 15px;
     border-radius: 8px;
 }
 
-
 footer {
-    background-color: #023e58;
+    background-color: #065A60;
     color: white;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
-
 
 @media (max-width: 768px) {
     nav ul li {
