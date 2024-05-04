@@ -65,7 +65,9 @@ h2, h3 {
     padding: 15px;
     border-radius: 8px;
 }
-
+.card-image {
+    max-width: 100%; 
+}
 footer {
     background-color: #065A60;
     color: white;
