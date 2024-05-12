@@ -21,7 +21,7 @@ header, nav, main, footer {
 header {
     background-color: #006D77;
     color: #fff;
-    position: relative; /* Needed for the hamburger icon */
+    position: relative; 
 }
 
 header h1 {
