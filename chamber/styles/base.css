@@ -57,7 +57,6 @@ main section {
     grid-column: span 2;
     text-align: center;
     padding: 2rem;
-    background-image: url('your-image.jpg'); 
     background-size: cover;
     background-position: center;
     color: #fff;
