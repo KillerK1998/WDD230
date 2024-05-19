@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+main section {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#hero {
+    grid-column: span 2;
+    text-align: center;
+    padding: 2rem;
+    background-image: url('your-image.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 0;
+    position: relative;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    color: black;  
+}
+
+#hero p {
+    font-size: 1.25rem;
+}
+#hero img {
+    max-width: 100%;
+}
+#join {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+}
+
+#events, #weather, #spotlights {
+    grid-column: span 2;
+}
+
+#events, #weather {
+    display: flex;
+    justify-content: space-between;
+}
+
+#events div, #weather div {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+#spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.spotlight {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    #events, #weather {
+        flex-direction: column;
+    }
+    
+    #events div, #weather div {
+        margin: 1rem 0;
+    }
+}
+footer {
+    width: 100%;
+    background-color:#333;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.footer-logo, .footer-additional {
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-logo p,
+.footer-additional p {
+    margin: 5px 0;
+}
+
+.author, .project, .lastmodified {
+    font-size: 14px;
+    color: red;
+}
+
+.footer-additional .additional-info {
+    font-size: 12px;
+    color: red;
+}
+.hamburger {
+    display: none; /* Ensures it's not displayed by default */
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding-right: 10px;
+    z-index: 1001; /* Ensures it is above other content */
+}
+.nav-menu-li {
+    display: none;
+}
+.nav-menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+nav{
+    display:none;
+}
+    nav ul {
+        position: absolute;
+        width: 100%;
+        background-color: #065A60;
+        top: 0px; /* Adjust based on your header's height */
+        left: 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-right: 0; /* Remove margin for mobile */
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    nav ul li:last-child a {
+        border-bottom: none;
+    }
+    
+}
+iframe{
+    width: 100%;
+     
+}
