@@ -57,7 +57,7 @@ main section {
     grid-column: span 2;
     text-align: center;
     padding: 2rem;
-    background-image: url('your-image.jpg'); /* Replace with your image URL */
+    background-image: url('your-image.jpg'); 
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -172,14 +172,14 @@ footer {
     color: red;
 }
 .hamburger {
-    display: none; /* Ensures it's not displayed by default */
+    display: none; 
     cursor: pointer;
     font-size: 30px;
     position: absolute;
     right: 20px;
     top: 20px;
     padding-right: 10px;
-    z-index: 1001; /* Ensures it is above other content */
+    z-index: 1001; 
 }
 .nav-menu-li {
     display: none;
@@ -198,7 +198,7 @@ nav{
         position: absolute;
         width: 100%;
         background-color: #065A60;
-        top: 0px; /* Adjust based on your header's height */
+        top: 0px; 
         left: 0;
         padding-top: 20px;
         padding-bottom: 30px;
@@ -208,7 +208,7 @@ nav{
     nav ul li {
         display: block;
         text-align: center;
-        margin-right: 0; /* Remove margin for mobile */
+        margin-right: 0; 
     }
 
     nav ul li a {
