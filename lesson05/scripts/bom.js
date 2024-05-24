@@ -1,11 +1,9 @@
-// Select the necessary elements
 const input = document.getElementById('favchap');
 const addButton = document.querySelector('button');
 const list = document.getElementById('list');
 
-// Add event listener for the Add Chapter button
 addButton.addEventListener('click', () => {
-    // Get the input value
+    
     const chapter = input.value.trim();
 
     // Check if the input is not empty
