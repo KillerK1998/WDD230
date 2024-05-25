@@ -11,7 +11,7 @@ addButton.addEventListener('click', () => {
         
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = '❌';
+        deleteButton.textContent = 'X';
         deleteButton.classList.add('delete');
         li.textContent = chapter;
         li.appendChild(deleteButton);
