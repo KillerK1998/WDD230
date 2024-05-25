@@ -1,6 +1,6 @@
 function toggleMenu() {
-    var menu = document.querySelector("nav"); // Make sure this ID matches your HTML
-    var hamburger = document.querySelector(".hamburger"); // Ensure this ID is also in your HTML
+    var menu = document.querySelector("nav"); 
+    var hamburger = document.querySelector(".hamburger"); 
 
     if (menu.style.display === "block") {
         menu.style.display = "none";
@@ -11,7 +11,7 @@ function toggleMenu() {
     }
 }
 
-// Optional: Resize event listener to adjust menu state when resizing windows
+
 window.addEventListener('resize', function() {
     var w = window.innerWidth;
     var menu = document.querySelector("nav");
