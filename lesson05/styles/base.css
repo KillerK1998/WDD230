@@ -67,3 +67,12 @@ li {
 		width: 320px;
 	}
 }
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+	height: 1rem;
+}
