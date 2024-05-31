@@ -154,3 +154,26 @@ iframe {
     width: 100%;
     height: auto;
 }
+.herolabel {
+	position: absolute;
+	top: 0%;
+	left: 15%;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 0rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+
+}
+.hero {
+	position: relative;
+}
