@@ -34,8 +34,13 @@
        
         <section id="hero">
             <h2>Welcome to the Saint George Chamber of Commerce</h2>
-
-            <img src="images/hero-image.png" alt="hero">
+            <picture>
+                <source srcset="images/wdd230-org-large.webp" media="(min-width: 1200px)">
+                <source srcset="images/wdd230-org-medium.webp" media="(min-width: 960px)">
+                <source srcset="images/wdd230-org-small.webp" media="(min-width: 400px)">
+                <img src="images/wdd230-org-small.webp" alt="hero">>
+            </picture>
+            <!--<img src="images/hero-image.png" alt="hero"> --->
             <p>Here you will find information in regards to activities, weather and companies in Saint George</p>
         </section>
         <section id="join">
@@ -48,7 +53,8 @@
         </section>
         <section id="weather">
             <h2>Weather</h2>
-            <p>Weather card information here.</p>
+            <p>Temperature: <span class="temperature">50 </span>Degrees</p>
+            <p>Windspeed: <span class="windspeed">5</span>MPH</p>
         </section>
         <section id="spotlights">
             <h2>Company Spotlights</h2>
@@ -68,7 +74,7 @@
     </main>
     <footer>
         <div class="footer-logo">
-            <img src="images/logo-color.png" alt="Logo" class="logo-img">
+            <img src="images/logo-color.webp" alt="Logo" class="logo-img">
             <p class="copyright"></p>
             <p class="author">Kaler Sappington</p>
             <p class="contact">208-122-2222</p>
@@ -82,6 +88,7 @@
     </footer>
     <script src="scripts/getdates.js"></script> 
     <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
 
