@@ -6,19 +6,25 @@
     <title>Kaler Sappington - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Kaler Sappington. This website serves as a hub for all course-related activities and resources.">
     <meta name="author" content="Kaler Sappington">
-    <link rel="stylesheet" href="styles/base.css">
+    
+    <!-- Normalize.css -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Base.css -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- Media files -->
+    <link rel="stylesheet" href="styles/screen.css" media="screen">
+    <link rel="stylesheet" href="styles/print.css" media="print">
+    
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Kaler Sappington - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://imgs.search.brave.com/oF3d7jg7PaVGcgh8sHLn-qoRQ-AHVI0V2PO_s9tY4Bo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc1/NDMxOTQ3L3Bob3Rv/L3BvcnRmb2xpby5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/OXBiMEFxY1dxaktJ/MmJKSl9wUmlkWnli/NWNLeHBkU1ZCNmRn/WU9wREx3ST0">
     <meta property="og:url" content="https://killerk1998.github.io/wdd230/">
-    
 </head>
 <body>
     <header>
         <div class="profile-container">
-            <img src="images/Kaler.JPG" alt="Your Name">
+            <img src="images/Kaler.webp" alt="Your Name">
             <div class="container">
                 <h1>Kaler Sappington</h1>
             </div>
@@ -37,13 +43,13 @@
     <main>
     <div class="hero">
         <picture>
-            <source srcset="images/temple.webp" media="(min-width: 960px)">
-            <source srcset="images/st-george-utah-temple-vibrant.webp" media="(min-width: 400px)">
-            <img src="images/temple.webp" alt="Favorite Temple">
+            <source srcset="images/temple-large.webp" media="(min-width: 960px)">
+            <source srcset="images/temple-small.webp" media="(min-width: 400px)">
+            <img src="images/temple-small.webp" alt="Favorite Temple">
         </picture>
-        <div class="herolabel">
-			<p>Saint George Utah Temple</p>
-		</div>
+        <div class="herolabel" style="position: absolute;">
+            <p>Saint George Utah Temple</p>
+        </div>
     </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">

@@ -110,42 +110,6 @@ footer {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    nav {
-        display: none; /* Hide nav by default in mobile view */
-    }
-
-    nav ul {
-        position: absolute;
-        width: 100%;
-        background-color: #065A60;
-        top: 60px; /* Adjust based on your header's height */
-        left: 0;
-        padding-top: 20px;
-        padding-bottom: 30px;
-        z-index: 1000;
-    }
-
-    nav ul li {
-        display: block;
-        text-align: center;
-        margin-right: 0; /* Remove margin for mobile */
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 10px;
-    }
-
-    nav ul li:last-child a {
-        border-bottom: none;
-    }
-}
-
 iframe {
     width: 100%;
 }
@@ -155,25 +119,23 @@ iframe {
     height: auto;
 }
 .herolabel {
-	position: absolute;
-	top: 0%;
-	left: 22%;
-	background: radial-gradient(#fff, #4D5B97);
-	border: 1px solid rgba(0,0,0,.75);
-	padding: 0rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 0rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
 }
 
 .herolabel p {
-	margin: 0;
-	padding: .25rem;
-	font-weight: 700;
-	font-size: 1.5rem;
-	font-family:"Great Vibes", serif;
-
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family:"Great Vibes", serif;
 }
 .hero {
-	position: relative;
+    position: relative;
 }
