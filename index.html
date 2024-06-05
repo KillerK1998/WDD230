@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/screen.css" media="screen">
     <link rel="stylesheet" href="styles/print.css" media="print">
+    <link rel="stylesheet" href="styles/map.css"> <!-- Link to the new CSS file for the map -->
     
     <link rel="icon" href="favicon.ico">
 </head>
@@ -59,9 +60,13 @@
             <h3>Information</h3>
             <p>Details about the weather and page visits will be added later.</p>
         </section>
+        <section id="visit-counter">
+            <h2>Visitor Count</h2>
+            <p>This page has been visited <span id="visitCount">0</span> times.</p>
+        </section>
     </main>
-    <div style="width: 100%">
-        <iframe height="600" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=2947%20Jacob%20Hamblin%20Dr.+(Kaler's%20house)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    <div class="map-container">
+        <iframe class="map-iframe" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=2947%20Jacob%20Hamblin%20Dr.+(Kaler's%20house)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
     </div>
     
     <footer>
@@ -70,5 +75,6 @@
     </footer>
     <script src="scripts/getdates.js"></script> 
     <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/visitcounter.js"></script>
 </body>
 </html>

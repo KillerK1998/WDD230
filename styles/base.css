@@ -143,3 +143,30 @@ iframe {
     width: 100%;
     height: auto;
 }
+#visit-counter {
+    grid-column: span 2;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#visit-counter h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#visit-counter p {
+    font-size: 1.5rem;
+    color: #333;
+}
+.map-container {
+    width: 100%;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
