@@ -1,4 +1,12 @@
-/* form.css */
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f4f4f4;
+    --text-color: #fff;
+    --input-border-color: #ccc;
+    --button-bg-color: #333;
+    --button-hover-bg-color: #555;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
