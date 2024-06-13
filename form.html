@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script>
+        function validatePassword() {
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirm-password');
+            if (password.value !== confirmPassword.value) {
+                alert('Passwords do not match. Please try again.');
+                password.value = '';
+                confirmPassword.value = '';
+                password.focus();
+                return false;
+            }
+            return true;
+        }
+
+        function updateRangeValue(value) {
+            document.getElementById('rangeValue').textContent = value;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Course Home Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Form Section</h2>
+        <form action="submit_form.php" method="POST" onsubmit="return validatePassword()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$" title="Password must be at least 8 characters long and contain only alpha-numeric characters.">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="A valid byui.edu email address.">
+
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRangeValue(this.value)" onchange="updateRangeValue(this.value)">
+            <span id="rangeValue">5</span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Course. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
