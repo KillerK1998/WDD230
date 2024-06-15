@@ -37,7 +37,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-main {
+.chamber {
     width: 100%;
     max-width: 1200px;
     padding: 2rem;

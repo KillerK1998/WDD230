@@ -170,7 +170,7 @@ iframe {
     height: 600px;
     border: none;
 }
-main {
+.chamber{
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;

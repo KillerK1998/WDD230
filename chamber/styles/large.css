@@ -1,23 +1,53 @@
-/*large css to be added*/
-
-.form-container {
-    display: flex;
-    flex-wrap: wrap;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
-.form-section {
-    flex: 1 1 50%;
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+.form-container {
+    width: 50%;
+    margin: 2em auto;
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label, input, select, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+input, select, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
 }
 .membership-benefits {
-    flex: 1 1 50%;
-    padding: 20px;
+    margin-top: 2em;
 }
-.form-section form {
-    display: flex;
-    flex-direction: column;
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
 }
-.form-section form label {
-    margin-bottom: 10px;
-}
-.form-section form input, .form-section form select, .form-section form textarea {
-    margin-bottom: 20px;
+.membership-benefits li {
+    background: #f9f9f9;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-left: 5px solid #333;
 }
