@@ -32,4 +32,7 @@
     nav ul li:last-child a {
         border-bottom: none;
     }
+    .join-form-container {
+        grid-template-columns: 1fr;
+    }
 }
