@@ -212,3 +212,13 @@ iframe {
     font-style: italic;
     color: #666;
 }
+
+@media (max-width: 768px) {
+    .grid-view .member {
+        flex: 1 1 100%;
+    }
+
+    .list-view .member img {
+        max-width: 80px;
+    }
+}

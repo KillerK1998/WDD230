@@ -36,3 +36,19 @@
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 480px) {
+    #toggleView {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .list-view .member {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-view .member img {
+        max-width: 100%;
+        margin: 0 0 1rem 0;
+    }
+}

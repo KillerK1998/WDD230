@@ -63,5 +63,15 @@ button:hover {
     gap: 20px;
     
 }
+@media (max-width: 1200px) {
+    .grid-view .member {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
 
+}
+@media (max-width: 768px) {
+    .grid-view .member {
+        flex: 1 1 100%;
+    }
 }
