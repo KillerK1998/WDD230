@@ -40,8 +40,8 @@
           "lesson": "05",
           "links": [
               {
-                  "url": "prophets.html",
-                  "title": "JSON Data"
+                  "url": "lesson09/prophets.html",
+                  "title": ""
               }
           ]
       },
@@ -76,8 +76,8 @@
           "lesson": "09",
           "links": [
               {
-                  "url": "",
-                  "title": ""
+                  "url": "prophets.html",
+                  "title": "JSON Data"
               }
           ]
       },
