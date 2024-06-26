@@ -238,7 +238,7 @@ iframe{
 }
 
 
-/* Base styles */
+
 #members {
     display: flex;
     flex-wrap: wrap;
@@ -264,12 +264,11 @@ iframe{
     transform: scale(1.05);
 }
 
-/* Grid view styles */
 .grid-view .member {
     flex: 1 1 calc(33.333% - 1rem);
 }
 
-/* List view styles */
+
 .list-view {
     flex-direction: column;
 }
