@@ -16,7 +16,7 @@ async function getWeather() {
             throw new Error('Invalid data structure');
         }
 
-        const temperature = data.main.temp;
+        const temperature = Math.ceil(data.main.temp); // Round up the temperature
         const description = data.weather[0].description;
         const icon = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 

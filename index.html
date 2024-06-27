@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -46,14 +45,18 @@
             </div>
         </div>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-            <h3>Information</h3>
-            <p id="weather">Loading weather...</p>
-            <section id="visit-counter">
-                <h2>Visitor Count</h2>
-                <p>This page has been visited <span id="visitCount">0</span> times.</p>
+        <div class="card-container">
+            <section class="card">
+                <h3>Information</h3>
+                <p id="weather">Loading weather...</p>
             </section>
-        </section>
+            <section class="card">
+                <h3>Visitor Count</h3>
+                <section id="visit-counter">
+                    <p>This page has been visited <span id="visitCount">0</span> times.</p>
+                </section>
+            </section>
+        </div>
         <section id="links-container"></section> <!-- This section will be populated with links -->
     </main>
     <div class="map-container">
