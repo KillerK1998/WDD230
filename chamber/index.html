@@ -32,6 +32,9 @@
         </nav>
     </header>
     <main class="chamber">
+        <div id="meet-greet-banner" style="display: none;">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m. <button onclick="closeBanner()">❌</button></p>
+        </div>
         <section id="hero">
             <h2>Welcome to the Saint George Chamber of Commerce</h2>
             <picture>
@@ -52,8 +55,14 @@
         </section>
         <section id="weather">
             <h2>Weather</h2>
-            <p>Temperature: <span class="temperature">50 </span>Degrees</p>
-            <p>Windspeed: <span class="windspeed">5</span>MPH</p>
+            <p>Temperature: <span id="current-temperature">Loading...</span> Degrees</p>
+            <p>Weather: <span id="weather-description">Loading...</span></p>
+            <p>3-Day Forecast:</p>
+            <ul id="forecast">
+                <li>Day 1: <span class="day1-forecast">Loading...</span> Degrees</li>
+                <li>Day 2: <span class="day2-forecast">Loading...</span> Degrees</li>
+                <li>Day 3: <span class="day3-forecast">Loading...</span> Degrees</li>
+            </ul>
         </section>
         <section id="spotlights">
             <h2>Company Spotlights</h2>
@@ -88,5 +97,7 @@
     <script src="scripts/getdates.js"></script> 
     <script src="scripts/togglemenu.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
+
