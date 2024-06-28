@@ -1,5 +1,5 @@
-const apiKey = '851406e8c24563b4eadba0961fac71d8'; // Your actual API key
-const cityName = 'Saint George,US'; // Specify the city name and country code
+const apiKey = '851406e8c24563b4eadba0961fac71d8'; 
+const cityName = 'Saint George,US'; 
 
 async function getWeather() {
     try {
@@ -20,21 +20,4 @@ async function getWeather() {
     }
 }
 
-// Display meet and greet banner on specific days
-function displayBanner() {
-    const today = new Date().getDay();
-    const banner = document.getElementById('meet-greet-banner');
 
-    if (today === 1 || today === 2 || today === 3) {
-        banner.style.display = 'block';
-    }
-}
-
-function closeBanner() {
-    document.getElementById('meet-greet-banner').style.display = 'none';
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    getWeather();
-    displayBanner();
-});
